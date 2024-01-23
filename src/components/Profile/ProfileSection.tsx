@@ -4,7 +4,9 @@ import LoginBtn from './LoginBtn';
 
 const ProfileWrapper = styled.div`
 display:flex;
-width: 100%;
+width: 600px;
+margin-left: -1.6rem;
+padding-inline: 1.6rem;
 height: 17.9em;
 border-radius:0px 0px 20px 20px;
 background-color: #EBF2FF;

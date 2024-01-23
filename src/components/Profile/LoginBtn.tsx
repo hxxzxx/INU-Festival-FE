@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const IsLoginBtn = styled.button`
@@ -20,7 +21,11 @@ letter-spacing: -0.6px;
 `;
 
 export default function LoginBtn() {
+  const navigate = useNavigate();
+  const navigateToLogin = () => {
+    navigate('/login');
+  };
   return (
-    <IsLoginBtn>로그인</IsLoginBtn>
+    <IsLoginBtn onClick={navigateToLogin}>로그인</IsLoginBtn>
   );
 }
